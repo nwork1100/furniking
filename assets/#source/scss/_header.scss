@@ -1,0 +1,47 @@
+.header {
+	width: 100%;
+	background-color: $main_color;
+	margin-bottom: 21px;
+	&__content {
+		font-family: $main_font;
+		font-weight: 400;
+		padding: 16px 0;
+		color: $white_color;
+		font-size: 16px;
+	}
+	.container {
+		.header__flex {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.welcome {}
+		.flex_wrapp {
+			display: flex;
+			justify-content: space-between
+		}
+			.spoiler {
+				position: relative;
+				margin-right: 60px;
+				img {
+					position: absolute;
+					display: inline-block;
+					top: 5px;
+					right: -20px;
+				}
+			}
+			.login_sign {
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					display: block;
+					top: 0;
+					left: -20px;
+					width: 2.2px;
+					height: 19px;
+					background: $white_color;
+				}
+			}
+	}
+}

@@ -1,0 +1,208 @@
+@mixin btn {
+	width: 129px;
+	height: 40px;
+	font-family: $second_font;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: $main_color;
+	border-radius: 5px;
+	color: $white_color;
+	text-transform: uppercase;
+}
+
+@mixin btn_read-more {
+	position: relative;
+	font-family: $second_font;
+	font-size: 16px;
+	font-weight: 400;
+	color: #757575;
+	background: none;
+	border: none;
+	outline: none;
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 8px;
+		right: -16px;
+		width: 11px;
+		height: 9px;
+		background: url("../img/icons/icon_grey_arrow.svg") center center/cover no-repeat;
+	}
+}
+
+@mixin main_title {
+	margin-bottom: 45px;
+	text-align: center;
+	font-family: $second_font;
+	font-size: 36px;
+	font-weight: bold;
+	color: $second_color;
+	text-transform: uppercase;
+}
+
+@mixin furniture_title {
+	margin-bottom: 10px;
+	font-family: $second_font;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+@mixin furniture_price {
+	margin-bottom: 15px;
+	font-family: $second_font;
+	font-size: 20px;
+	font-weight: 600;
+	color: $main_color;
+}
+
+@mixin new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	width: 45px;
+	height: 20px;
+	font-family: $second_font;
+	font-size: 12px;
+	font-weight: 600;
+	color: $white_color;
+	text-transform: capitalize;
+	background: #00B7F1;
+	border-radius: 0 0 5px 0;
+}
+
+@mixin sale {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	width: 45px;
+	height: 20px;
+	font-family: $second_font;
+	font-size: 12px;
+	font-weight: 600;
+	color: $white_color;
+	text-transform: capitalize;
+	background: $main_color;
+	border-radius: 0 0 5px 0;
+}
+
+@mixin disc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	width: 45px;
+	height: 20px;
+	font-family: $second_font;
+	font-size: 12px;
+	font-weight: 600;
+	color: $white_color;
+	text-transform: capitalize;
+	background: #FF6868;
+	border-radius: 0 0 5px 0;
+}
+
+@mixin price_now {
+	display: inline-block;
+	margin-right: 15px;
+	font-family: $second_font;
+	font-size: 18px;
+	font-weight: bold;
+	color: $main_color;
+}
+
+@mixin price_was {
+	display: inline-block;
+	font-family: $second_font;
+	font-size: 18px;
+	font-weight: 600;
+	color: #CCCCCC;
+	text-decoration: line-through;
+}
+
+@mixin our_trending_menu {
+	max-width: 572px;
+	margin: 0 auto;
+	margin-bottom: 73px;
+}
+
+@mixin our_trending_menu_list {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+@mixin our_trending_menu_link {
+	font-family: $second_font;
+	font-size: 24px;
+	font-weight: 600;
+	color: #C2C2C2;
+	text-transform: capitalize;
+	&:hover {
+		color: $main_color;
+	}
+}
+
+@mixin our_trending_wrapp {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+@mixin our_trending_item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45px;
+	&:last-child {
+		margin-bottom: 50px;
+	}
+}
+
+@mixin our_trending_prod {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 270px;
+}
+
+@mixin our_trending_img {
+	position: relative;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 288px;
+}
+
+@mixin our_trending_lable {
+	margin-bottom: 9px;
+	font-family: $second_font;
+	font-size: 14px;
+	font-weight: 400;
+	color: #757575;
+	text-transform: uppercase;
+}
+
+@mixin our_trending_name {
+	margin-bottom: 10px;
+	font-family: $main_font;
+	font-size: 20px;
+	font-weight: 400;
+	color: $second_color;
+}
+
+@mixin our_trending_prod_price {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+

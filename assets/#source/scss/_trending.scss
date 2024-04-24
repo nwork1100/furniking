@@ -1,0 +1,124 @@
+.trending {
+	margin-bottom: 99px;
+	.container {
+		.trending__content {
+			.trending__title {
+				@include main_title;
+			}
+			nav.trending__menu {
+				@include our_trending_menu;
+				.trending__list {
+					@include our_trending_menu_list;
+					.trending__item {
+						.trending__link {
+							@include our_trending_menu_link;
+						}
+					}
+				}
+			}
+			.trending__wrapp {
+				@include our_trending_wrapp;
+				.trending__item {
+					@include our_trending_item;
+					.trending__prod {
+						@include our_trending_prod;
+						.trending__prod_img-1 {
+							@include our_trending_img;
+							background: url("../img/trending/minimal_lcd_chair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include new;
+							}
+						}
+						.trending__prod_img-2 {
+							@include our_trending_img;
+							background: url("../img/trending/minimal_iconic_chair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include new;
+							}
+						}
+						.trending__prod_img-3 {
+							@include our_trending_img;
+							background: url("../img/trending/dining_chairs.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include sale;
+							}
+						}
+						.trending__prod_img-4 {
+							@include our_trending_img;
+							background: url("../img/trending/buskbo_armchair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include sale;
+							}
+						}
+
+						.trending__prod_img-5 {
+							@include our_trending_img;
+							background: url("../img/trending/modern_chairs.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include sale;
+							}
+						}
+						.trending__prod_img-6 {
+							@include our_trending_img;
+							background: url("../img/trending/plastic_dining_chair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include sale;
+							}
+						}
+						.trending__prod_img-7 {
+							@include our_trending_img;
+							background: url("../img/trending/minimal_wood_chair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include new;
+							}
+						}
+						.trending__prod_img-8 {
+							@include our_trending_img;
+							background: url("../img/trending/elegent_wood_chair.jpg") center center/cover no-repeat;
+							.trending__prod-status {
+								@include new;
+							}
+						}
+						.trending__prod-lable {
+							@include our_trending_lable;
+						}
+						.trending__prod-name {
+							@include our_trending_name;
+						}
+						.trending__prod-price {
+							@include our_trending_prod_price;
+							.prod-price {
+								display: flex;
+								justify-content: start;
+							}
+							span.prod-price_now {
+								@include price_now;
+							}
+							span.prod-price_was {
+								@include price_was;
+							}
+							.prod-star {}
+						}
+					}
+				}
+			}
+			.trending__slider {
+				text-align: center;
+			}
+			.trending__radio {}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
